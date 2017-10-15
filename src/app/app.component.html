@@ -1,0 +1,16 @@
+
+<form #employee="ngForm" (ngSubmit)="saveData(employee)">
+  <mat-form-field>
+    <input matInput [(ngModel)]='data.first_name' placeholder="Name" name="first_name">
+  </mat-form-field><br>
+  <mat-form-field>
+    <input matInput [(ngModel)]='data.last_name' placeholder="LastName" name="last_name">
+  </mat-form-field><br>
+  <mat-form-field>
+    <input matInput [(ngModel)]='data.position' placeholder="Position" name="position">
+  </mat-form-field><br>
+  <mat-form-field>
+    <input matInput [(ngModel)]='data.salary' placeholder="Salary" name="salary">
+  </mat-form-field><br>
+<button type="submit" mat-raised-button>Save</button>
+</form>
